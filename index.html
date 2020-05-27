@@ -1,9 +1,132 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
+        <title>My Favourite Songs</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <meta name = "viewport" content = "width-device-width, initial-scale =1">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        Hello, world!
+        <!--navbar-->
+        <nav class = "navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <div class = "container-fluid">
+                <a class ="navbar-brand" href = "#"><img src = "images/logo.png" width = "70"></a>
+                <button class = "navbar-toggler" type = "button" data-toggle ="collapse" data-target="#navbarResponsive">
+                    <span class ="navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse" id = "navbarResponsive">
+                    <ul class = "navbar-nav ml-auto">
+                        <li class = "nav-item active">
+                            <a class = "nav-link" href = '#'>Introduction</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = 'sb.html'>Songbird</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = 'pr.html'>Purple Rain</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = 'cotw.html'>Champion Of The World</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--top banner-->
+        <div class = "top-banner">
+            <div class="jumbotron index-jumbo">
+                <br><br>
+                <h1 class="welcome">Welcome!</h1>
+                <p class="title-sub">My name is Rafe. This is my first website and project for CS50W showcasing three of my favourite songs.</p>
+                <br><br>
+            </div>
+        </div>
+
+        <!--intro-->
+        <div class = "container-fluid">
+            <div class = "row"></div>
+            <div class = "row text-center m-5">
+                <div class = "col-sm-12 col-md-6 px-5 mb-3 pb-3">
+                    <h3>Nice to meet you</h3><br>
+                    I'm a Year 1 Information Systems student at Singapore Management University. I'm currently stuck at home due to the COVID-19 Lockdown
+                    so I decided to pick up some web programming skills with CS50W. <br><br>When I'm not working / studying / holed up in the house
+                    I like to swim, paddleboard, go to the gym, sing karaoke, game, cook, admire sunsets, and watch The Office compilations on YouTube.
+                    <br><br>For Project 0, I decided to build a static webpage showcasing three of my favourite songs. 
+                    I hope you like them too!
+                </div>
+                <div class = "col-sm-12 col-md-6 mb-3 p-3 align-items-center">
+                    <img src = "images/face.jpg" class = "img-fluid rounded">
+                </div>
+                <div class = "row"></div>
+            </div>
+        </div> 
+
+        <!--carousell-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href = "sb.html">
+                        <img class="d-block w-100" src="images/sbbanner.jpg" alt="Songbird">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Songbird</h1>
+                        <p>Fleetwood Mac</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href = "pr.html">
+                        <img class="d-block w-100" src="images/prbanner.jpg" alt="Purple Rain">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Purple Rain</h1>
+                        <p>Prince</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href = "cotw.html">
+                        <img class="d-block w-100" src="images/champbanner.jpg" alt="Champion Of The World">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Champion Of The World</h1>
+                        <p>Coldplay</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--that's all-->
+        <div class = "container-fluid">
+            <div class = "row m-5">
+                <div class = "col-sm-12 col-md-6 p-3">
+                    <h2>That's all!</h2>
+                    <p>Thank you for visiting my website. I referred extensively to a tutorial by Drew Ryan on YouTube.
+                        If you're interested, here's the <a href = "https://www.youtube.com/watch?v=9cKsq14Kfsw">link</a>. 
+                        And if you have any song recommendations feel free to share them with me on
+                        <a class = "telegram" href = "https://t.me/rafe_ang">Telegram</a>. Have a nice day! :)</p>                    
+                </div>
+                <div class = "col-sm-0 col-md-1"></div>
+                <div class = "col-sm-12 col-md-5">
+                    <img id = "doggo" src = "images/bye.gif" class = "img-fluid">
+                </div>
+            </div>
+        </div>
     </body>
 </html>
